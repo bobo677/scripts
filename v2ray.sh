@@ -272,7 +272,7 @@ getData() {
             CERT_FILE="/etc/v2ray/${DOMAIN}.pem"
             KEY_FILE="/etc/v2ray/${DOMAIN}.key"
         else
-            resolve=2001:19f0:5401:2234:5400:3ff:fe63:f627
+            resolve=2a01:4f8:272:3ae6:1006:44e1:2829:1
             res=`echo -n ${resolve} | grep ${IP}`
             if [[ -z "${res}" ]]; then
                 colorEcho ${BLUE}  "${DOMAIN} 解析结果：${resolve}"
